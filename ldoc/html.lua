@@ -341,7 +341,6 @@ function ldoc.source_ref (fun)
    -- ext step is then only for putting out any examples or topics
    local mods = List()
    for kind, modules in project() do
-    print(kind)
       local lkind = kind:lower()
       if not ldoc.single or ldoc.single and lkind ~= 'modules' then
          mods:append {kind, lkind, modules}
